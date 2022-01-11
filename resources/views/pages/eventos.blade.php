@@ -40,10 +40,9 @@
 
                             <tbody>
                                 <!--Con el foreach hacemos un recorrido del array tasks y
-                            asignamos a la variable $task el elemento que este recorriendo
-                            y asociamos el valor a la variable $tsk-->
-                                 <tr  @foreach ($tasks as $task => $tsk)>
-                                 <th scope="row">{{$task}}</th>
+                            asignamos a la variable $task el elemento que este recorriendo-->
+                                 <tr  @foreach ($tasks as $tsk)>
+                                 <td>{{ $tsk->id }}</td>
                                  <td>{{ $tsk->nombre }}</td>
                                  <td>{{ $tsk->descripcion }}</td>
                                  <td>{{ $tsk->fechaInicio }}</td>

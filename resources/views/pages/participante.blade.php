@@ -41,10 +41,9 @@
 
                         <tbody>
                             <!--Con el foreach hacemos un recorrido del array participants y
-                            asignamos a la variable $participant el elemento que este recorriendo
-                            y asociamos el valor a la variable $ptct-->
-                            <tr  @foreach ($participants as $participant => $ptct)>
-                            <th scope="row">{{$participant}}</th>
+                            asignamos a la variable $participant el elemento que este recorriendo-->
+                            <tr  @foreach ($participants as $ptct)>
+                            <td>{{ $ptct->id}}</td>
                             <td>{{ $ptct->nombres }}</td>
                             <td>{{ $ptct->apellidopaterno }}</td>
                             <td>{{ $ptct->apellidomaterno }}</td>
